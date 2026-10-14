@@ -5,57 +5,298 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Главная</title>
+    <title>IT WEBSITE</title>
     <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body>
 
+    <!-- 1. ШАПКА -->
     <header class="header">
-        <img src="assets/img/logo.png" alt="Логотип" width="150">
+    <a href="#" class="logo">
+        <img src="assets/img/logo.png" alt="Логотип" width="50">
+        IT WEBSITE
+    </a>
 
-        <nav class="breadcrumbs">
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#cases">Cases</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contacts">Contacts</a></li>
             </ul>
         </nav>
 
+        <div class="header-contacts">
+            <a href="tel:+71111111111">+7 (111) 111-11-11</a>
+            <a href="mailto:itcompany@mail.com">itcompany@mail.com</a>
+        </div>
     </header>
 
     <main>
-        <h1 class="h1-title">Мой сайт</h1>
 
-        <p class="text">Добро пожаловать на мой учебный сайт.</p>
+        <!-- 2. ГЕРОЙ -->
+        <section class="hero">
+            <h1 class="h1-title">Development of mobile applications and web services of any complexity</h1>
+            <p class="text">We create mobile applications for iOS, Android that transfer your business to mobile applications of your customers' devices.</p>
 
-        <h3 class="h3-title">О сайте</h3>
+            <form class="hero-form">
+                <h3 class="h3-title">Leave your contacts and we will call you back within 30 minutes</h3>
+                <label for="hero-phone">Phone number</label>
+                <input class="input-field" type="tel" id="hero-phone" name="phone" placeholder="+7 (111) 111-11-11">
 
-        <h4 class="h4-title">Учебный проект</h4>
+                <label for="hero-name">Full name</label>
+                <input class="input-field" type="text" id="hero-name" name="name" placeholder="Ivan Ivanov">
 
-        <p class="text">Здесь размещены материалы моей лабораторной работы по веб-технологиям.</p>
+                <button class="submit-btn" type="submit">Get consultation</button>
+            </form>
 
-        <h3 class="h3-title">Наши услуги</h3>
+            <img src="assets/img/phone.png" alt="Mobile applications" width="300">
+        </section>
 
-        <p class="text">Разработка простых веб-страниц.</p>
-        
+        <hr>
+
+        <!-- 3. ПОЛНЫЙ ЦИКЛ РАЗРАБОТКИ -->
+        <section class="services" id="services">
+            <h2 class="h2-title">Full development cycle</h2>
+            <p class="text">We use proven technologies</p>
+
+            <article class="services-tech">
+                <h3 class="h3-title">Web</h3>
+                <ul>
+                    <li>PHP / JavaScript / Node.JS / Web Socket / Socket.io / Vue.js</li>
+                    <li>Next / MySQL / Laravel / GO lang / django / Python</li>
+                </ul>
+
+                <h3 class="h3-title">Mobile</h3>
+                <ul>
+                    <li>Swift / Kotlin / Alamofire / Firebase / CoreData</li>
+                    <li>Room / Realm / Coroutine / RxJava / RxSwift / Unit Test / Navigation</li>
+                </ul>
+            </article>
+
+            <aside class="services-list">
+                <ul>
+                    <li><a href="#">iOS development</a></li>
+                    <li><a href="#">Android development</a></li>
+                    <li><a href="#">Web development</a></li>
+                    <li><a href="#">UI/UX design</a></li>
+                    <li><a href="#">Testing</a></li>
+                    <li><a href="#">Launch</a></li>
+                    <li><a href="#">IT consulting</a></li>
+                </ul>
+            </aside>
+        </section>
+
+        <hr>
+
+        <!-- 4. ОТРАСЛИ -->
+        <section class="industries">
+            <h2 class="h2-title">Developed more than 100 projects in 15 industries</h2>
+
+            <ul class="industries-list">
+                <li>Social media</li>
+                <li>Education</li>
+                <li>AR technology</li>
+                <li>Fitness and sport</li>
+                <li>Auto, transport</li>
+                <li>TV series</li>
+                <li>Bank</li>
+                <li>Medicine, health</li>
+                <li>Startups</li>
+                <li>Construction</li>
+                <li>Restaurants, food delivery</li>
+                <li>Religion</li>
+                <li>Game projects</li>
+                <li>Marketplaces</li>
+                <li>Online courses</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- 5. ПРОЕКТЫ -->
+        <section class="projects" id="cases">
+            <h2 class="h2-title">Projects we are proud of</h2>
+            <p class="text">Our software development company is truly proud of the wonderful clients we have worked with. We enjoy a long-term partnership.</p>
+
+            <ul class="projects-list">
+                <li>I-teka</li>
+                <li>Dauletten</li>
+                <li>Guru Bosch</li>
+                <li>Santo</li>
+                <li>Home Credit Bank</li>
+                <li>BI Partners</li>
+                <li>Europharma</li>
+            </ul>
+
+            <article class="project-card">
+                <h3 class="h3-title">I-teka</h3>
+                <p class="text">The application is designed to search for drugs by availability in pharmacies in cities. During quarantine, the application helped many people, which gives more value.</p>
+                <p class="text">Business analysis / iOS / Android / QA / UI/UX Design</p>
+
+                <ul>
+                    <li>Kazakhstan</li>
+                    <li>Medicine</li>
+                </ul>
+
+                <p class="text">400% User Growth</p>
+                <p class="text">+ 200 000 Active Users</p>
+
+                <a href="#">App Store</a>
+                <a href="#">Google Play</a>
+
+                <img src="assets/img/app-iteka.png" alt="I-teka app" width="250">
+            </article>
+
+            <a href="#" class="btn-link">View 100 more projects</a>
+        </section>
+
+        <hr>
+
+        <!-- 6. CTA (Let's discuss) -->
+        <section class="cta">
+            <h2 class="h2-title">Let's discuss Your project</h2>
+            <p class="text">Let's figure out how to create an effective application, its cost and terms of its development</p>
+
+            <form class="cta-form">
+                <label for="cta-phone">Best phone number</label>
+                <input class="input-field" type="tel" id="cta-phone" name="phone" placeholder="+7 (702) 517-11-98">
+
+                <label for="cta-name">Full name</label>
+                <input class="input-field" type="text" id="cta-name" name="name" placeholder="Ivan Ivanov">
+
+                <button class="submit-btn" type="submit">Discuss the project</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- 7. ЭТАПЫ РАЗРАБОТКИ -->
+        <section class="stages">
+            <h2 class="h2-title">Application Development Stages</h2>
+
+            <article class="stage-card">
+                <h4 class="h4-title">Analysis</h4>
+                <p class="text">We write technical specifications for development, taking into account the business processes and technologies of the customer and the needs of users.</p>
+            </article>
+
+            <article class="stage-card">
+                <h4 class="h4-title">Design</h4>
+                <p class="text">We adapt the customer's corporate identity to the platform guidelines. We draw convenient and understandable interfaces.</p>
+            </article>
+
+            <article class="stage-card">
+                <h4 class="h4-title">Development</h4>
+                <p class="text">We create an extensible architecture, write clean and stable code. We integrate with customer technologies.</p>
+            </article>
+
+            <article class="stage-card">
+                <h4 class="h4-title">Testing</h4>
+                <p class="text">We carry out functional testing and bug fixes. We adapt the application to different phone resolutions.</p>
+            </article>
+
+            <article class="stage-card">
+                <h4 class="h4-title">Launching</h4>
+                <p class="text">We design the application page and publish it in the App Store and Google Play stores.</p>
+            </article>
+
+            <article class="stage-card">
+                <h4 class="h4-title">Support</h4>
+                <p class="text">We monitor the stability of the application, update it for new devices and versions of iOS and Android.</p>
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- 8. КОМАНДА -->
+        <section class="team">
+            <h2 class="h2-title">Our team</h2>
+            <p class="text">Thousands is a full-cycle digital production company with its own product analytics, design, web and mobile development.</p>
+
+            <ul class="team-stats">
+                <li>28 — team members</li>
+                <li>+100 — projects</li>
+                <li>7 years — in IT sphere</li>
+            </ul>
+
+            <p class="text">All the necessary specialists - from a designer to a tester - are on our staff. We hire the best specialists in the market. It's expensive but worth it</p>
+
+            <img src="assets/img/team.png" alt="Our team" width="400">
+        </section>
+
+        <hr>
+
+        <!-- 9. ПРОМО (книга) -->
+        <section class="promo">
+            <h2 class="h2-title">Get the book for free by leaving your contacts</h2>
+
+            <form class="promo-form">
+                <label for="promo-phone">Phone number</label>
+                <input class="input-field" type="tel" id="promo-phone" name="phone" placeholder="+7 (111) 111-11-11">
+
+                <label for="promo-name">Your full name</label>
+                <input class="input-field" type="text" id="promo-name" name="name" placeholder="Ivan Ivanov">
+
+                <label for="promo-email">Email</label>
+                <input class="input-field" type="email" id="promo-email" name="email" placeholder="mail@mail.com">
+
+                <button class="submit-btn" type="submit">Send me ebook to my mail</button>
+            </form>
+
+            <img src="assets/img/book.png" alt="Book" width="200">
+        </section>
+
+        <hr>
+
+        <!-- 10. FAQ -->
+        <section class="faq" id="faq">
+            <h2 class="h2-title">FAQ</h2>
+
+            <article class="faq-item">
+                <h4 class="h4-title">What is the cost of a mobile application?</h4>
+                <p class="text">Development time depends on the requirements for the mobile application, the characteristics of the company, as well as the wishes of the customer.</p>
+            </article>
+
+            <article class="faq-item">
+                <h4 class="h4-title">How long will development take?</h4>
+                <p class="text">Average development time from start to finished application: Medium projects up to 3 months. Large projects about 4-6 months.</p>
+            </article>
+
+            <article class="faq-item">
+                <h4 class="h4-title">Do you provide a guarantees for the mobile application?</h4>
+                <p class="text">To get a more accurate estimate of the project completion time, it is necessary to determine the main task of the application, think over its logic and functionality.</p>
+            </article>
+
+            <article class="faq-item">
+                <h4 class="h4-title">I will not tell my idea, do you guarantee confidentiality?</h4>
+                <p class="text">Yes, we guarantee full confidentiality of your idea and all project details.</p>
+            </article>
+        </section>
+
     </main>
 
     <hr>
 
-    <footer class="footer">
-        <h3 class="h3-title">Контакты</h3>
+    <!-- 11. ПОДВАЛ -->
+    <footer class="footer" id="contacts">
+        <h2 class="h2-title">IT WEBSITE</h2>
 
-        <p class="text">Свяжитесь с нами.</p>
-
-        <hr>
-
-        <ul>
-            <li>Наши контакты</li>
-            <li>+7 900 123-45-67</li>
-            <li>example@mail.ru</li>
+        <ul class="footer-contacts">
+            <li><a href="tel:+77893559026">+7 (778) 355 90 26</a></li>
+            <li><a href="mailto:mail@mail.com">mail@mail.com</a></li>
+            <li>City, street st. 90</li>
         </ul>
 
-        <p class="text">Все права защищены</p>
+        <form class="footer-form">
+            <label for="footer-request">Leave a request</label>
+            <input class="input-field" type="text" id="footer-request" name="request">
+            <button class="submit-btn" type="submit">Leave a request</button>
+        </form>
+
+        <p class="text">We work throughout world</p>
     </footer>
 
+    <script src="index.js"></script>
 </body>
 </html>
