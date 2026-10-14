@@ -2,10 +2,98 @@
 @import "./fonts.css";
 @import "./utils.css";
 
-.test {
-    color: yellow !important;
+.text {
+    font-size: 16px;
+    line-height: 26px;
+    color: #1F3F68;
 }
 
-.test {
-    color: red !important;
+.h1-title {
+    font-size: 64px;
+    color: #1F3F68;
+}
+
+.h2-title {
+    font-weight: 500;
+    font-size: 44px;
+    text-align: center;
+}
+
+.h3-title {
+    font-size: 36px;
+    text-align: center;
+}
+
+.h4-title {
+    font-size: 20px;
+    line-height: 30px;
+    color: #1F3F68;
+}
+
+.input-field {
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0.4;
+}
+
+.submit-btn {
+    background: linear-gradient(90deg, #3B5FE0 0%, #9B4FE8 100%);
+    border-radius: 24px;
+    padding: 20px 60px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border: none;
+    box-shadow: 0 4px 20px rgba(80, 80, 220, 0.3);
+}
+
+.contact-form {
+    background-image: url("../img/form-bg.png");
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+}
+
+.contact-form label {
+    display: block;
+    color: #FFFFFF;
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.contact-form .input-field {
+    width: 100%;
+    padding: 10px 14px;
+    background-color: #FFFFFF;
+    color: #1F3F68;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    margin-bottom: 10px;
+    opacity: 1;
+}
+
+.contact-form .submit-btn {
+    margin-top: 15px;
+}
+
+.breadcrumbs ul {
+    display: flex;
+    gap: 0;
+    list-style: none;
+    padding: 0;
+}
+
+.breadcrumbs ul li {
+    background: linear-gradient(180deg, #A8D0CE 0%, #6BA8A5 100%);
+    border-radius: 50px;
+    padding: 12px 40px;
+    margin-right: -15px;
+    font-size: 20px;
+    color: #000;
 }
