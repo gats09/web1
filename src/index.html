@@ -1,18 +1,72 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="/src/assets/styles/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IT WEBSITE</title>
+  <link rel="stylesheet" href="./assets/styles/style.css" />
 </head>
 <body>
-<div class="test" style="color: blue">
-    test
-</div>
+  
+  <header class="header">
+    <div class="header__inner">
+      <a class="header__logo" href="#">IT WEBSITE</a>
+      <nav class="header__nav">
+        <a href="#">Услуги</a>
+        <a href="#">Медиа</a>
+        <a href="#">Кейсы</a>
+        <a href="#">FAQ</a>
+        <a href="#">Контакты</a>
+      </nav>
+      <div class="header__contacts">
+        <span class="header__phone">+7 (111) 111 11 11</span>
+        <span class="header__phone">+7 (111) 111 11 11</span>
+        <a href="mailto:itcompany@mail.com" class="header__email">itcompany@mail.com</a>
+      </div>
+    </div>
+  </header>
 
-<script src="index.js"></script>
+  <main class="main">
+    <section class="hero">
+      
+      <div class="hero__content">
+        <h1 class="hero__title">
+          Разработка <span class="text-blue">мобильных приложений</span> и <span class="text-blue">веб-сервисов</span> любой сложности
+        </h1>
+        <p class="hero__subtitle">
+          Мы создаем мобильные приложения для iOS и Android, которые переносят ваш бизнес на устройства ваших клиентов
+        </p>
+
+        <div class="hero__form-wrapper">
+          <h3 class="hero__form-title">Оставьте свои контакты, и мы перезвоним вам в течение <span class="text-blue">30 минут</span></h3>
+          <form action="#" class="hero__form">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Номер телефона</label>
+                <input type="tel" placeholder="+7 (111) 111-11-11" class="form-input">
+              </div>
+              <div class="form-group">
+                <label>Ваше имя</label>
+                <input type="text" placeholder="Иван Иванов" class="form-input">
+              </div>
+            </div>
+            <button type="submit" class="btn-primary">Получить консультацию</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="hero__image">
+        <img src="./assets/img/phone.png" alt="Мобильное приложение" class="hero__img">
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <p>© 2026 WEBиС</p>
+    </div>
+  </footer>
+
 </body>
 </html>
