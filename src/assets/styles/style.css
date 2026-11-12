@@ -318,6 +318,7 @@ main.main {
 /* =========================================
    ВТОРОЙ ЭКРАН (FULL DEVELOPMENT CYCLE)
    ========================================= */
+
 .cycle {
   background-color: #ffffff;
   padding: 80px 0;
@@ -330,30 +331,31 @@ main.main {
   padding: 0 40px;
 }
 
-.cycle__header {
-  margin-bottom: 50px;
+/* Сетка из двух колонок */
+.cycle__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
 }
 
+/* Заголовки */
 .cycle__title {
   font-size: 36px;
   font-weight: 700;
   color: var(--text-dark);
   margin-top: 0;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 
 .cycle__subtitle {
   font-size: 16px;
+  font-weight: 600;
   color: var(--text-dark);
-  font-weight: 500;
+  margin-bottom: 40px;
 }
 
-.cycle__content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-}
-
+/* Блоки с технологиями */
 .tech-block {
   margin-bottom: 30px;
 }
@@ -363,13 +365,13 @@ main.main {
   font-weight: 700;
   color: var(--text-dark);
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .tech-block__desc {
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.6;
-  color: var(--text-dark);
+  color: var(--primary-blue);
   margin: 0;
 }
 
@@ -381,40 +383,31 @@ main.main {
 
 .cycle__list-item {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  padding: 18px 0;
-  border-bottom: 1px solid #F3F4F6; 
-}
-
-.cycle__list-item:first-child {
-  padding-top: 0;
-}
-
-.cycle__list-item:last-child {
-  border-bottom: none;
+  gap: 10px;
+  padding: 14px 0; 
 }
 
 .cycle__list-item a {
   text-decoration: none;
-  color: var(--text-dark);
+  color: var(--primary-blue);
   font-size: 16px;
   font-weight: 500;
-  transition: color 0.2s;
+  transition: opacity 0.2s;
 }
 
 .cycle__list-item:hover a {
-  color: var(--primary-blue);
+  opacity: 0.7;
 }
 
 .cycle__icon {
-  color: #9CA3AF; 
-  font-size: 16px; /* Добавили размер для иконки */
-  transition: color 0.2s, transform 0.2s;
+  color: var(--primary-blue);
+  font-size: 14px;
+  transition: transform 0.2s;
 }
 
 .cycle__list-item:hover .cycle__icon {
-  color: var(--primary-blue);
   transform: translateX(5px); 
 }
 
@@ -598,7 +591,7 @@ main.main {
   .cycle__container {
     padding: 0 20px;
   }
-  .cycle__content {
+  .cycle__grid {
     gap: 40px; 
   }
   .cycle__title {
@@ -719,6 +712,10 @@ main.main {
     padding-top: 18px; 
     border-top: 1px solid #F3F4F6; 
   }
+  .cycle__grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }  
 
   .footer__grid {
     grid-template-columns: 1fr;
